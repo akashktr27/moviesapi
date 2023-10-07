@@ -14,6 +14,7 @@ from django.http import *
 from rest_framework.decorators import api_view
 import json
 
+
 class RegisterView(generics.CreateAPIView):
     queryset = CustomUser.objects.all()
     serializer_class = UserSerializer
